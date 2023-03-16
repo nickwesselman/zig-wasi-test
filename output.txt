@@ -1,0 +1,54 @@
+*** TESTING EXE
+
+** wasmtime
+All your codebase are belong to us.
+{ "hello": true }
+
+** function-runner
+      Benchmark Results      
+
+Name: exe.wasm
+Runtime: 473.542µs
+Linear Memory Usage: 1088KB
+Fuel burned: 33075 units
+Size: 104KB
+
+            Logs            
+
+All your codebase are belong to us.
+error while executing at wasm backtrace:
+    0:  0x12a - start.callMain
+                    at /opt/homebrew/Cellar/zig/0.10.1/lib/zig/std/start.zig:605:13              - _start
+                    at /opt/homebrew/Cellar/zig/0.10.1/lib/zig/std/start.zig:240:42
+           Output           
+
+{
+  "hello": true
+}
+
+
+*** TESTING LIB
+
+** wasmtime
+All your codebase are belong to us.
+{ "hello": true }
+
+** function-runner
+      Benchmark Results      
+
+Name: lib.wasm
+Runtime: 68.541µs
+Linear Memory Usage: 1088KB
+Fuel burned: 33069 units
+Size: 104KB
+
+            Logs            
+
+All your codebase are belong to us.
+
+           Output           
+
+{
+  "hello": true
+}
+
